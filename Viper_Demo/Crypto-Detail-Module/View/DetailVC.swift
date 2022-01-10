@@ -10,30 +10,27 @@ import UIKit
 protocol DetailViewProtocol{
     var presenter: DetailPresenterProtocol? {get set}
     func showCryptoDetail(withCrypto crypto: CryptoModel)
-    func showCryptoError(withError error: Error)
 }
 
 class DetailVC: UIViewController, DetailViewProtocol {
-
+    
     var presenter: DetailPresenterProtocol?
+    
+    @IBOutlet weak var currencyNameLabel: UILabel!
+    @IBOutlet weak var currencyPriceLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        presenter?.sendCryptoToView()
+        navigationItem.title = "CRYPTO DETAIL"        
     }
     
     
-    func showCryptoDetail(withCrypto crypto: CryptoModel) {
-        print(crypto)
-    }
-    
-    func showCryptoError(withError error: Error) {
-        print(error)
+    func showCryptoDetail(withCrypto crypto: CryptoModel) {      
+        currencyNameLabel.text = crypto.currency
+        currencyPriceLabel.text = crypto.price
     }
     
     
-    
-
-
-
 }

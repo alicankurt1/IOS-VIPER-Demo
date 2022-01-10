@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BBC7F0A278C63C200B60A1A /* DetailStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BBC7F09278C63C200B60A1A /* DetailStoryBoard.storyboard */; };
 		0BDDE82C2789DCA600C2C8EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDE82B2789DCA600C2C8EE /* AppDelegate.swift */; };
 		0BDDE82E2789DCA600C2C8EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDE82D2789DCA600C2C8EE /* SceneDelegate.swift */; };
 		0BDDE8302789DCA600C2C8EE /* CryptosInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDE82F2789DCA600C2C8EE /* CryptosInfoVC.swift */; };
@@ -21,13 +22,13 @@
 		0BDDE878278C00AD00C2C8EE /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDE877278C00AD00C2C8EE /* DetailVC.swift */; };
 		0BDDE87A278C00C900C2C8EE /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDE879278C00C900C2C8EE /* DetailRouter.swift */; };
 		0BDDE87C278C00D200C2C8EE /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDE87B278C00D200C2C8EE /* DetailPresenter.swift */; };
-		0BDDE87E278C00EB00C2C8EE /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDE87D278C00EB00C2C8EE /* DetailInteractor.swift */; };
 		0BDDE880278C00F800C2C8EE /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDE87F278C00F800C2C8EE /* DetailModel.swift */; };
 		0BDDE882278C077800C2C8EE /* DetailErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDE881278C077800C2C8EE /* DetailErrors.swift */; };
 		0BDDE884278C139E00C2C8EE /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDE883278C139E00C2C8EE /* CryptoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BBC7F09278C63C200B60A1A /* DetailStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailStoryBoard.storyboard; sourceTree = "<group>"; };
 		0BDDE8282789DCA600C2C8EE /* Viper_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viper_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDDE82B2789DCA600C2C8EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BDDE82D2789DCA600C2C8EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		0BDDE877278C00AD00C2C8EE /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		0BDDE879278C00C900C2C8EE /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		0BDDE87B278C00D200C2C8EE /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
-		0BDDE87D278C00EB00C2C8EE /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		0BDDE87F278C00F800C2C8EE /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
 		0BDDE881278C077800C2C8EE /* DetailErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailErrors.swift; sourceTree = "<group>"; };
 		0BDDE883278C139E00C2C8EE /* CryptoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCell.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		0BDDE82A2789DCA600C2C8EE /* Viper_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				0BDDE8422789DEA900C2C8EE /* Storyboards */,
+				0BDDE8422789DEA900C2C8EE /* LaunchScreen */,
 				0BDDE8412789DE6D00C2C8EE /* Settings */,
 				0BDDE83F2789DD6500C2C8EE /* Crypto-Info-Module */,
 				0BDDE8402789DE6300C2C8EE /* Crypto-Detail-Module */,
@@ -106,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				0BDDE84C2789E00D00C2C8EE /* Entity */,
-				0BDDE84B2789E00500C2C8EE /* Interactor */,
 				0BDDE8492789DFFA00C2C8EE /* Presenter */,
 				0BDDE84A2789E00000C2C8EE /* Router */,
 				0BDDE8482789DFF500C2C8EE /* View */,
@@ -123,13 +122,12 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		0BDDE8422789DEA900C2C8EE /* Storyboards */ = {
+		0BDDE8422789DEA900C2C8EE /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
 				0BDDE8362789DCA600C2C8EE /* LaunchScreen.storyboard */,
-				0BDDE8312789DCA600C2C8EE /* Main.storyboard */,
 			);
-			path = Storyboards;
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		0BDDE8432789DF6500C2C8EE /* Entity */ = {
@@ -170,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				0BDDE82F2789DCA600C2C8EE /* CryptosInfoVC.swift */,
+				0BDDE8312789DCA600C2C8EE /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				0BDDE877278C00AD00C2C8EE /* DetailVC.swift */,
+				0BBC7F09278C63C200B60A1A /* DetailStoryBoard.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,14 +196,6 @@
 				0BDDE879278C00C900C2C8EE /* DetailRouter.swift */,
 			);
 			path = Router;
-			sourceTree = "<group>";
-		};
-		0BDDE84B2789E00500C2C8EE /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				0BDDE87D278C00EB00C2C8EE /* DetailInteractor.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		0BDDE84C2789E00D00C2C8EE /* Entity */ = {
@@ -275,6 +267,7 @@
 			files = (
 				0BDDE8382789DCA600C2C8EE /* LaunchScreen.storyboard in Resources */,
 				0BDDE8352789DCA600C2C8EE /* Assets.xcassets in Resources */,
+				0BBC7F0A278C63C200B60A1A /* DetailStoryBoard.storyboard in Resources */,
 				0BDDE8332789DCA600C2C8EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +284,6 @@
 				0BDDE884278C139E00C2C8EE /* CryptoCell.swift in Sources */,
 				0BDDE8542789E22500C2C8EE /* CryptoInfoRouter.swift in Sources */,
 				0BDDE8502789E1FC00C2C8EE /* CryptosInfoPresenter.swift in Sources */,
-				0BDDE87E278C00EB00C2C8EE /* DetailInteractor.swift in Sources */,
 				0BDDE882278C077800C2C8EE /* DetailErrors.swift in Sources */,
 				0BDDE84E2789E1A900C2C8EE /* CryptosInfoInteractor.swift in Sources */,
 				0BDDE87C278C00D200C2C8EE /* DetailPresenter.swift in Sources */,

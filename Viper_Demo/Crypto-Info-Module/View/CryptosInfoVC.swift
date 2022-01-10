@@ -29,6 +29,8 @@ class CryptosInfoVC: UIViewController, CryptoViewProtocol{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        navigationItem.title = "CRYPTOS INFO"
+        
         cryptosTableView.delegate = self
         cryptosTableView.dataSource = self
     }

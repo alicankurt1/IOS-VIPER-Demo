@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DetailVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="Y6W-OH-hqX" customClass="DetailVC" customModule="Viper_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIr-Ol-OFL">
+                                <rect key="frame" x="41" y="344" width="333" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="SyX-yP-OPC"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Currency">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="34" name="Menlo-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hd-qw-AdZ">
+                                <rect key="frame" x="41" y="538" width="333" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="DLk-Rv-5v9"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Price">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="30" name="Menlo-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tIr-Ol-OFL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="300" id="DvQ-c9-JH0"/>
+                            <constraint firstItem="tIr-Ol-OFL" firstAttribute="trailing" secondItem="3hd-qw-AdZ" secondAttribute="trailing" id="Ict-78-8Ls"/>
+                            <constraint firstItem="tIr-Ol-OFL" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Qx6-di-vC8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="3hd-qw-AdZ" secondAttribute="bottom" constant="242" id="YPm-8g-NXu"/>
+                            <constraint firstItem="tIr-Ol-OFL" firstAttribute="leading" secondItem="3hd-qw-AdZ" secondAttribute="leading" id="hlC-Aq-Ly4"/>
+                            <constraint firstItem="tIr-Ol-OFL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="41" id="vih-lC-0Ko"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currencyNameLabel" destination="tIr-Ol-OFL" id="csq-6O-djw"/>
+                        <outlet property="currencyPriceLabel" destination="3hd-qw-AdZ" id="hyM-RR-GG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197" y="76"/>
+        </scene>
+    </scenes>
+</document>
