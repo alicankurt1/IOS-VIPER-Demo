@@ -61,6 +61,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B7B8F652790116C00EE1D73 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		0BDDE81F2789DCA600C2C8EE = {
 			isa = PBXGroup;
 			children = (
@@ -93,11 +100,11 @@
 		0BDDE83F2789DD6500C2C8EE /* Crypto-Info-Module */ = {
 			isa = PBXGroup;
 			children = (
-				0BDDE8432789DF6500C2C8EE /* Entity */,
+				0BDDE8472789DF9300C2C8EE /* View */,
 				0BDDE8442789DF7100C2C8EE /* Interactor */,
 				0BDDE8462789DF8800C2C8EE /* Presenter */,
+				0BDDE8432789DF6500C2C8EE /* Entity */,
 				0BDDE8452789DF8100C2C8EE /* Router */,
-				0BDDE8472789DF9300C2C8EE /* View */,
 			);
 			path = "Crypto-Info-Module";
 			sourceTree = "<group>";
@@ -105,10 +112,11 @@
 		0BDDE8402789DE6300C2C8EE /* Crypto-Detail-Module */ = {
 			isa = PBXGroup;
 			children = (
-				0BDDE84C2789E00D00C2C8EE /* Entity */,
-				0BDDE8492789DFFA00C2C8EE /* Presenter */,
-				0BDDE84A2789E00000C2C8EE /* Router */,
 				0BDDE8482789DFF500C2C8EE /* View */,
+				0B7B8F652790116C00EE1D73 /* Interactor */,
+				0BDDE8492789DFFA00C2C8EE /* Presenter */,
+				0BDDE84C2789E00D00C2C8EE /* Entity */,
+				0BDDE84A2789E00000C2C8EE /* Router */,
 			);
 			path = "Crypto-Detail-Module";
 			sourceTree = "<group>";
